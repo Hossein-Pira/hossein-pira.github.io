@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hossein Pira" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Hossein Pira</title>
+  </head>
+  <body class="dark">
+    <div
+      class="h3dev_tm_all_wrap"
+      data-magic-cursor="show"
+      data-enter="fadeInLeft"
+      data-exit=""
+    >
+      <div id="preloader">
+        <div class="loader_line"></div>
+      </div>
+
+      <div
+        class="h3dev_tm_topbar bg-white fixed top-0 left-0 right-0 h-[50px] z-[14] hidden"
+      >
+        <div
+          class="topbar_inner w-full h-full clear-both flex items-center justify-between py-0 px-[20px]"
+        >
+          <div class="trigger relative top-[5px]">
+            <div class="hamburger hamburger--slider">
+              <div class="hamburger-box w-[30px]">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h3dev_tm_mobile_menu fixed top-[50px] right-[-200px] h-[100vh] w-[200px] z-[15] bg-white transition-all duration-300"
+      >
+        <div
+          class="menu_list w-full h-auto clear-both float-left text-right px-[20px] pt-[100px] pb-[0px]"
+        >
+          <ul class="transition_link list-none">
+            <li class="active mb-[7px]">
+              <a class="text-black font-montserrat" href="#home">Home</a>
+            </li>
+            <li class="mb-[7px]">
+              <a class="text-black font-montserrat" href="#about">About</a>
+            </li>
+            <li>
+              <a class="text-black font-montserrat" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="leftpart w-[450px] h-[100vh] fixed flex items-center z-[12] px-[100px] py-[0px] bg-white"
+      >
+        <div class="leftpart_inner w-full h-auto">
+          <div class="menu px-[0px] py-[50px] w-full float-left">
+            <ul class="transition_link m-0 list-none">
+              <li class="active m-0 w-full float-left">
+                <a
+                  class="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="m-0 w-full float-left">
+                <a
+                  class="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li class="m-0 w-full float-left">
+                <a
+                  class="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="copyright w-full float-left">
+            <p class="text-[15px] text-[#999] font-montserrat leading-[25px]">
+              © 2023 Hossein Pira<br />Created by
+              <a
+                class="text-[#787878] font-medium transition-all duration-300 hover:text-black"
+                href="https://t.me/h3dev"
+                target="_blank"
+                >Hossein Pira</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="rightpart w-full min-h-[100vh] float-left relative bg-[#f8f8f8] pl-[450px]"
+      >
+        <div
+          class="rightpart_in relative w-full float-left clear-both border-solid border-[#ebebeb] border-l min-h-[100vh]"
+        >
+          <div id="home" class="h3dev_tm_section animated">
+            <div class="container">
+              <div
+                class="h3dev_tm_home w-full min-h-[100vh] clear-both flex items-center justify-center relative"
+              >
+                <div class="home_content flex items-center">
+                  <div
+                    class="avatar min-w-[300px] min-h-[300px] relative rounded-full"
+                    data-type="wave"
+                  >
+                    <div
+                      class="image absolute inset-0 bg-no-repeat bg-center bg-cover"
+                      data-img-url="images/my.jpg"
+                    ></div>
+                  </div>
+                  <div class="details ml-[80px]">
+                    <h3
+                      class="name text-[55px] font-extrabold uppercase mb-[14px]"
+                    >
+                      Hossein <span>Pira</span>
+                    </h3>
+                    <p
+                      class="job font-montserrat font-medium max-w-[450px] mb-[25px]"
+                    >
+                      I am a backend developer who can develop powerful APIs.
+                    </p>
+                    <div class="social w-full float-left">
+                      <ul class="m-0 list-none">
+                        <li class="mr-[8px] inline-block">
+                          <a
+                            class="text-black text-[20px] transition-all duration-300 hover:text-black"
+                            href="https://www.instagram.com/h3dev.pira"
+                            target="_blank"
+                            ><i class="icon-instagram-3"></i
+                          ></a>
+                        </li>
+                        <li class="mr-[8px] inline-block">
+                          <a
+                            class="text-black text-[20px] transition-all duration-300 hover:text-black"
+                            href="https://twitter.com/H3devPira"
+                            target="_blank"
+                            ><i class="icon-twitter-squared"></i
+                          ></a>
+                        </li>
+                        <li class="mr-[8px] inline-block">
+                          <a
+                            class="text-black text-[20px] transition-all duration-300 hover:text-black"
+                            href="https://t.me/h3dev"
+                            target="_blank"
+                            ><i class="icon-telegram"></i
+                          ></a>
+                        </li>
+                        <li class="mr-[8px] inline-block">
+                          <a
+                            class="text-black text-[20px] transition-all duration-300 hover:text-black"
+                            href="https://github.com/ReactMVC"
+                            target="_blank"
+                            ><i class="icon-github-squared"></i
+                          ></a>
+                        </li>
+                        <li class="mr-[8px] inline-block">
+                          <a
+                            class="text-black text-[20px] transition-all duration-300 hover:text-black"
+                            href="https://www.linkedin.com/in/hossein-pira-bb26212a0"
+                            target="_blank"
+                            ><i class="icon-linkedin-squared"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="about" class="h3dev_tm_section">
+            <div class="container">
+              <div
+                class="h3dev_tm_about w-full h-auto clear-both float-left py-[100px] px-0"
+              >
+                <div
+                  class="h3dev_tm_title w-full h-auto clear-both float-left mb-[62px]"
+                >
+                  <div
+                    class="title_flex w-full h-auto clear-both flex justify-between items-end"
+                  >
+                    <div class="left">
+                      <span
+                        class="inline-block bg-[rgba(0,0,0,.04)] uppercase py-[4px] px-[10px] font-semibold text-[12px] text-[#333] font-montserrat tracking-[0px] mb-[11px]"
+                        >About</span
+                      >
+                      <h3 class="font-extrabold font-montserrat">About Me</h3>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="top_author_image w-full h-auto clear-both float-left relative mb-[35px]"
+                >
+                  <img src="images/my.jpg" alt="" width="200" />
+                </div>
+                <div
+                  class="about_title w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[20px] mb-[30px]"
+                >
+                  <h3 class="text-[22px] font-bold">Hossein Pira</h3>
+                  <span>Web Developer</span>
+                </div>
+                <div
+                  class="about_text w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[31px] mb-[30px]"
+                >
+                  <p class="mb-[11px]">
+                    Hello, my name is Hossein Pira and I am a Back-End
+                    programmer. I also have the ability to develop Front-End,
+                    which is my second specialty. I master MongoDB and MySQL
+                    databases. My main work is API and Back-End development and
+                    I have complete mastery in this field. I spend a lot of time
+                    on projects, especially for their security.
+                  </p>
+                  <p>
+                    I was born in Iran and started programming at the age of 14.
+                    I am very interested in the open source community. Also, I
+                    love music, game, movies, and series.
+                  </p>
+                </div>
+                <div
+                  class="h3dev_tm_short_info w-full h-auto clear-both float-left flex border-solid border-[#DFDFDF] border-b pb-[30px] mb-[40px]"
+                >
+                  <div class="left w-1/2 pr-[50px]">
+                    <div
+                      class="h3dev_tm_info w-full h-auto clear-both float-left"
+                    >
+                      <ul class="m-0 list-none">
+                        <li class="m-0">
+                          <span
+                            class="min-w-[100px] float-left mr-[10px] font-bold text-black"
+                            >Birthday:</span
+                          ><span>2005 February 10</span>
+                        </li>
+                        <li class="m-0">
+                          <span
+                            class="min-w-[100px] float-left mr-[10px] font-bold text-black"
+                            >Email:</span
+                          ><span
+                            ><a
+                              class="text-[#767676] transition-all duration-300 hover:text-black"
+                              href="mailto:h3dev.pira@gmail.com"
+                              ><span>h3dev.pira@gmail.com</span
+                              ></a
+                            ></span
+                          >
+                        </li>
+                        <li class="m-0">
+                          <span
+                            class="min-w-[100px] float-left mr-[10px] font-bold text-black"
+                            >Phone:</span
+                          ><span
+                            ><a
+                              class="text-[#767676] transition-all duration-300 hover:text-black"
+                              href="tel:+98 903 948 4577"
+                              >+98 903 948 4577</a
+                            ></span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="right w-1/2 pl-[50px]">
+                    <div class="h3dev_tm_info">
+                      <ul class="m-0 list-none">
+                        <li class="m-0">
+                          <span
+                            class="min-w-[100px] float-left mr-[10px] font-bold text-black"
+                            >Nationality:</span
+                          ><span>Iran</span>
+                        </li>
+                        <li class="m-0">
+                          <span
+                            class="min-w-[100px] float-left mr-[10px] font-bold text-black"
+                            >Interest:</span
+                          ><span>Shooter game, Programming</span>
+                        </li>
+                        <li class="m-0">
+                          <span
+                            class="min-w-[100px] float-left mr-[10px] font-bold text-black"
+                            >Freelance:</span
+                          ><span>Available</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="h3dev_tm_progressbox w-full h-auto clear-both float-left bg-white pt-[93px] pr-[0px] pb-[100px] pl-[0px]"
+            >
+              <div class="container">
+                <div class="in w-full h-auto clear-both float-left flex">
+                  <div class="left w-1/2 pr-[50px]">
+                    <div
+                      class="h3dev_section_title w-full h-auto clear-both float-left mb-[40px]"
+                    >
+                      <h3 class="text-[20px] font-bold">Programming Skills</h3>
+                    </div>
+                    <div class="h3dev_progress">
+                      <div class="progress_inner" data-value="95">
+                        <span
+                          ><span class="label">PHP</span
+                          ><span class="number">95%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="95">
+                        <span
+                          ><span class="label">HTML/CSS</span
+                          ><span class="number">95%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="90">
+                        <span
+                          ><span class="label">JavaScript</span
+                          ><span class="number">90%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="80">
+                        <span
+                          ><span class="label">NodeJS/Express</span
+                          ><span class="number">80%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="80">
+                        <span
+                          ><span class="label">Vue</span
+                          ><span class="number">80%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="90">
+                        <span
+                          ><span class="label">React</span
+                          ><span class="number">90%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="80">
+                        <span
+                          ><span class="label">MongoDB</span
+                          ><span class="number">80%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="100">
+                        <span
+                          ><span class="label">MySQL</span
+                          ><span class="number">100%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="60">
+                        <span
+                          ><span class="label">TypeScript</span
+                          ><span class="number">60%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="85">
+                        <span
+                          ><span class="label">Laravel</span
+                          ><span class="number">85%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="95">
+                        <span
+                          ><span class="label">Bootstrap</span
+                          ><span class="number">95%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="75">
+                        <span
+                          ><span class="label">Tailwind CSS</span
+                          ><span class="number">75%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="40">
+                        <span
+                          ><span class="label">C++</span
+                          ><span class="number">40%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="30">
+                        <span
+                          ><span class="label">Java</span
+                          ><span class="number">30%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="60">
+                        <span
+                          ><span class="label">React Native</span
+                          ><span class="number">60%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="70">
+                        <span
+                          ><span class="label">ElectronJS</span
+                          ><span class="number">70%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="20">
+                        <span
+                          ><span class="label">web3</span
+                          ><span class="number">20%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right w-1/2 pl-[50px]">
+                    <div
+                      class="h3dev_section_title w-full h-auto clear-both float-left mb-[40px]"
+                    >
+                      <h3 class="text-[20px] font-bold">Language Skills</h3>
+                    </div>
+                    <div class="h3dev_progress">
+                      <div class="progress_inner" data-value="100">
+                        <span
+                          ><span class="label">Persian</span
+                          ><span class="number">100%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                      <div class="progress_inner" data-value="55">
+                        <span
+                          ><span class="label">English</span
+                          ><span class="number">55%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar"><div class="bar_in"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="contact" class="h3dev_tm_section">
+            <div class="container">
+              <div
+                class="h3dev_tm_contact w-full float-left clear-both h-auto py-[100px] px-[0px]"
+              >
+                <div
+                  class="h3dev_tm_title w-full h-auto clear-both float-left mb-[62px]"
+                >
+                  <div
+                    class="title_flex w-full h-auto clear-both flex justify-between items-end"
+                  >
+                    <div class="left">
+                      <span
+                        class="inline-block bg-[rgba(0,0,0,.04)] uppercase py-[4px] px-[10px] font-semibold text-[12px] text-[#333] font-montserrat tracking-[0px] mb-[11px]"
+                        >Contact</span
+                      >
+                      <h3 class="font-extrabold font-montserrat">
+                        Get in Touch
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="fields w-full float-left clear-both h-auto">
+                  <form
+                    action="/"
+                    method="post"
+                    class="contact_form"
+                    id="contact_form"
+                    autocomplete="off"
+                  >
+                    <div
+                      class="returnmessage"
+                      data-success="Your message has been received, We will contact you soon."
+                    ></div>
+                    <div class="empty_notice">
+                      <span>Please Fill Required Fields</span>
+                    </div>
+                    <div class="first w-full float-left">
+                      <ul class="list-none">
+                        <li class="w-full mb-[30px] float-left">
+                          <input id="name" type="text" placeholder="Name" />
+                        </li>
+                        <li class="w-full mb-[30px] float-left">
+                          <input id="email" type="text" placeholder="Email" />
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="last">
+                      <textarea id="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="h3dev_tm_button" data-position="left">
+                      <a id="send_message" href="#">
+                        <span>Send Message</span>
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mouse-cursor cursor-outer"></div>
+      <div class="mouse-cursor cursor-inner"></div>
+    </div>
+
+    <script data-cfasync="false" src="js/email-decode.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
